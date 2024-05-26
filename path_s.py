@@ -9,7 +9,7 @@ def on_key_event(e):
     if e.event_type == KEY_DOWN:
         barcode_data += e.name
         if barcode_data.endswith(target_sequence):
-            sleep(0.500)
+            sleep(0.200)
             press('s')
 
 hook(on_key_event)
